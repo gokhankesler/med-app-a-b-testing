@@ -6,3 +6,10 @@ class TestTruncatedMean(object):
         test_argument = pd.DataFrame({'test': [0.1 , 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]})
         expected = 0.55
         assert expected == truncated_mean(test_argument)[0]
+
+
+class TestCalculateConversionRate(object):
+    def test_on_type_first_arg(df):
+        test_argument = pd.DataFrame({'test': [0.1 , 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]})
+        expected = 0.55
+        assert 1 == 1
