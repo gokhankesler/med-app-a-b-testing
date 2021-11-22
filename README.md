@@ -25,5 +25,5 @@ date        uid       sku            price
 2017-11-12  41195147  sku_four_599   599
 ```
 
-## III. KPI: Conversion Rate
+## 3. KPI: Conversion Rate
 One question in defining our KPI is over what interval should we consider the conversion rate? The conversion immediately after lapse? one week after? One month? One way to decide this is to see the generalizability of these statistics across different demographic groups. Stability in this way is desired so we don't need custom KPIs for each breakdown. A second is to see if one is more correlated with important factors like retention or spending than the others.
