@@ -11,5 +11,5 @@ setup(name='Med App A/B Testing',
       license="MIT",
       author='Gokhan Kesler',
       author_email='gokhankesler@gmail.com',
-      packages=find_packages(include=["src"]),
+      packages=find_packages(include=["src", "src/*"]),
      )
