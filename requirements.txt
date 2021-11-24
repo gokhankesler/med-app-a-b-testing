@@ -15,7 +15,7 @@ jupyter-core==4.9.1
 kiwisolver==1.3.2
 matplotlib==3.5.0
 matplotlib-inline==0.1.3
--e git+https://github.com/gokhankesler/med-app-ab-testing.git@50e6680981700b2102c4cf2a736415291626bff5#egg=Med_App_A_B_Testing
+-e git+https://github.com/gokhankesler/med-app-ab-testing.git@3faf605060e4a491a09f3596fe683ed8308297cd#egg=Med_App_A_B_Testing
 nest-asyncio==1.5.1
 numpy==1.21.4
 packaging==21.3
