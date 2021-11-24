@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import pandas as pd
-from datetime import timedelta
+
 
 def truncated_mean(data):
     """Compute the mean and excluding outliers.
@@ -19,7 +19,7 @@ def truncated_mean(data):
 
 
 def calculate_conversion_rate(df, days):
-    """[summary]
+    """ Return conversion rate
 
     Args:
         df ([DataFrame]): [description]
@@ -29,16 +29,18 @@ def calculate_conversion_rate(df, days):
         [int]: Conversion rate
     """
     current_date = df.reg_date.max()
-    lapse_date = pd.to_timedelta(days,'d')
+    lapse_date = pd.to_timedelta(days, 'd')
     max_lapse_date = current_date - lapse_date
     conv_sub_data = df[df.reg_date < max_lapse_date]
     total_users_count = conv_sub_data.price.count()
     max_sub_date = conv_sub_data.reg_date + lapse_date
-    total_subs = conv_sub_data[(conv_sub_data.price > 0) & (conv_sub_data.date < max_sub_date)]
+    total_subs = conv_sub_data[(conv_sub_data.price > 0) & (
+        conv_sub_data.date < max_sub_date)]
     total_subs_count = total_subs.price.count()
     conversion_rate = total_subs_count / total_users_count
 
     return conversion_rate
+
 
 def gc7(sub_date):
     total = sub_date.count()
