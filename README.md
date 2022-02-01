@@ -1,4 +1,4 @@
-# Medication App A/B Testing
+# Meditation App A/B Testing
 
 This project implements A/B testing of a mobile app that offers meditation services for a paid subscription as well as one-off in-app purchases. 
 
